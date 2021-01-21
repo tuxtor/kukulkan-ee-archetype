@@ -1,37 +1,53 @@
-## Welcome to GitHub Pages
+# Kukulkan-EE Archetype
 
-You can use the [editor on GitHub](https://github.com/tuxtor/kukulkan-ee-archetype/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+## Introduction
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+Kukulkan EE is an opinionated bootstrap archetype for JavaEE/JakartaEE 8.0 and Microprofile 3 family.
 
-### Markdown
+The principal motivator behind this is time. Despite being the foundation of Enterprise Java ecosystem, bootstrapping CDI projects is a time consuming and sometimes redundant task.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Hence Kukulkan EE was created with the following principles:
 
-```markdown
-Syntax highlighted code block
+* Provide a bootstrap project for traditional .war deployments, fat jars, just enough application server and Docker.
+* Allow type-safe and fast data repository generation with Deltaspike Data
+* Allow CI/CD workflows through Arquillian and Maven
+* Execute compatibility tests using GitHub Actions.
 
-# Header 1
-## Header 2
-### Header 3
+Kukulkan integrates the following dependencies:
 
-- Bulleted
-- List
+* Java 11 - As language
+* Maven - SCM/Task Runner
+* SL4J - log abstraction (using JDK log by default)
+* Payara 5 - runtime
+* Jakarta EE 8 and MicroProfile 3.3 - APIs
+* JKube for basic Docker/K8S control using Maven
 
-1. Numbered
-2. List
+This is a work in progress.
 
-**Bold** and _Italic_ and `Code` text
+## Why Kukulkan?
 
-[Link](url) and ![Image](src)
-```
+In the Mayan mithology [Kukulkan](https://en.wikipedia.org/wiki/Kukulkan) is one of the deities that created (hence bootstrapped) the universe.
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+Also as an internal joke, this project is a maintained/useful project for a [Guatemalan company](https://www.nabenik.com/) and people in Guatemala tend to overuse Mayan terms.
 
-### Jekyll Themes
+## Specification examples
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/tuxtor/kukulkan-ee-archetype/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+By default, Kukulkan includes the creation of a JAX-RS application class to define the path for endpoints.
 
-### Support or Contact
+Also, a simple Hello world endpoint is created, have a look **HelloController** class.
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+More information on MicroProfile can be found [here](https://microprofile.io/)
+
+## How to use this archetype 
+
+To generate a Docker/JakartaEE/MicroProfile base project, you could invoke this archetype:
+
+> mvn archetype:generate \
+-DarchetypeGroupId=com.nabenik \
+-DarchetypeArtifactId=kukulkan-ee-archetype \
+-DarchetypeVersion=0.0.1-SNAPSHOT -DgroupId=io.academik \
+-DartifactId=cool-academik-backend -Dversion=2.0-SNAPSHOT
+
+This will generate a base Java project with all libraries activated and persistance on H2 database (default provider in Payara).
+
+After that any Java IDE will suffice to develop your next microserice with Java.
