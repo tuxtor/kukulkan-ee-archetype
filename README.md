@@ -1,4 +1,4 @@
-# Kukulkan-EE Project
+# Kukulkan-EE Archetype
 
 ## Introduction
 
@@ -30,7 +30,6 @@ In the Mayan mithology [Kukulkan](https://en.wikipedia.org/wiki/Kukulkan) is one
 
 Also as an internal joke, this project is a maintained/useful project for a [Guatemalan company](https://www.nabenik.com/) and people in Guatemala tend to overuse Mayan terms.
 
-
 ## Specification examples
 
 By default, Kukulkan includes the creation of a JAX-RS application class to define the path for endpoints.
@@ -38,3 +37,17 @@ By default, Kukulkan includes the creation of a JAX-RS application class to defi
 Also, a simple Hello world endpoint is created, have a look **HelloController** class.
 
 More information on MicroProfile can be found [here](https://microprofile.io/)
+
+## How to use this archetype 
+
+To generate a Docker/JakartaEE/MicroProfile base project, you could invoke this archetype:
+
+> mvn archetype:generate \
+-DarchetypeGroupId=com.nabenik \
+-DarchetypeArtifactId=kukulkan-ee-archetype \
+-DarchetypeVersion=0.0.1-SNAPSHOT -DgroupId=io.academik \
+-DartifactId=cool-academik-backend -Dversion=2.0-SNAPSHOT
+
+This will generate a base Java project with all libraries activated and persistance on H2 database (default provider in Payara).
+
+After that any Java IDE will suffice to develop your next microserice with Java.
