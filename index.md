@@ -1,6 +1,4 @@
-# Kukulkan-EE Archetype
-
-## Introduction
+# Kukulkan-EE Archetyp## Introduction
 
 Kukulkan EE is an opinionated bootstrap archetype for JavaEE/JakartaEE 8.0 and Microprofile 3 family.
 
