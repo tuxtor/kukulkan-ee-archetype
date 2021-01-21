@@ -1,0 +1,2 @@
+FROM payara/micro:5.2020.6-jdk11
+COPY maven/target/${artifactId}.war $DEPLOY_DIR
