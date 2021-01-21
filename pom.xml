@@ -6,8 +6,40 @@
   <artifactId>kukulkan-ee-archetype</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>maven-archetype</packaging>
+  
 
   <name>kukulkan-ee-archetype</name>
+  <description>Kukulkan EE is an opinionated bootstrap archetype for JavaEE/JakartaEE 8.0 and Microprofile 3 family.</description>
+  <url>https://tuxtor.github.io/kukulkan-ee-archetype/</url>
+
+  <organization>
+		<url>https://nabenik.com</url>
+		<name>Nabenik</name>
+	</organization>
+	<inceptionYear>2016</inceptionYear>
+
+	<licenses>
+    <license>
+      <name>MIT License</name>
+      <url>http://www.opensource.org/licenses/mit-license.php</url>
+    </license>
+  </licenses>
+  
+  <developers>
+		<developer>
+			<name>Victor Orozco</name>
+			<email>me@vorozco.com</email>
+			<organization>Nabenik</organization>
+			<organizationUrl>https://nabenik.com</organizationUrl>
+			<timezone>UTC-06:00</timezone>
+		</developer>
+  </developers>
+  
+  <scm>
+		<connection>scm:git:git://github.com/tuxtor/kukulkan-ee-archetype.git</connection>
+		<developerConnection>scm:git:git@github.com:tuxtor/kukulkan-ee-archetype.git</developerConnection>
+		<url>https://github.com/tuxtor/kukulkan-ee-archetype</url>
+	</scm>
 
   <build>
     <extensions>
