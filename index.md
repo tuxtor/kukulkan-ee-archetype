@@ -14,11 +14,11 @@ Hence Kukulkan EE was created with the following principles:
 Kukulkan integrates the following dependencies:
 
 * Java 11 - As language
-* Maven - SCM/Task Runner
-* SL4J - log abstraction (using JDK log by default)
-* Payara 5 - runtime
-* Jakarta EE 8 and MicroProfile 3.3 - APIs
-* JKube for basic Docker/K8S control using Maven
+* [Maven](https://maven.apache.org) - SCM/Task Runner
+* [SLF4J](http://www.slf4j.org/) - log abstraction using JDK log by default, (as CDI producer)
+* [Payara 5](https://www.payara.fish/) - runtime (with uber-jar support)
+* [Jakarta EE 8](https://jakarta.ee/) and [MicroProfile 3.3](https://microprofile.io/) - APIs
+* [JKube](https://www.eclipse.org/jkube/) for basic Docker/K8S control using Maven
 
 This is a work in progress.
 
@@ -30,11 +30,9 @@ Also as an internal joke, this project is a maintained/useful project for a [Gua
 
 ## Specification examples
 
-By default, Kukulkan includes the creation of a JAX-RS application class to define the path for endpoints.
+By default, Kukulkan includes a JAX-RS application starter class to define the path for endpoints.
 
 Also, a simple Hello world endpoint is created, have a look **HelloController** class.
-
-More information on MicroProfile can be found [here](https://microprofile.io/)
 
 ## How to use this archetype 
 
@@ -46,4 +44,4 @@ mvn archetype:generate -DarchetypeGroupId=com.nabenik -DarchetypeArtifactId=kuku
 
 This will generate a base Java project with all libraries activated and persistance on H2 database (default provider in Payara).
 
-After that any Java IDE will suffice to develop your next microserice with Java.
+After that any Java IDE will suffice to develop your next microservice with Java.
