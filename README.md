@@ -54,6 +54,6 @@ To generate a Docker/JakartaEE/MicroProfile base project, you could invoke this 
 -DarchetypeVersion=0.0.1-SNAPSHOT -DgroupId=io.academik \
 -DartifactId=cool-academik-backend -Dversion=2.0-SNAPSHOT
 
-This will generate a base Java project with all libraries activated and persistance on H2 database (default provider in Payara).
+This will generate a base Java project with all libraries activated and persistence on H2 database (default provider in Payara).
 
 After that any Java IDE will suffice to develop your next microserice with Java.
