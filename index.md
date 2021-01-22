@@ -1,3 +1,5 @@
+[![Maven Central](https://img.shields.io/maven-central/v/com.nabenik/kukulkan-ee-archetype.svg?label=Maven%20Central)](https://search.maven.org/search?q=g:%22com.nabenik%22%20AND%20a:%22kukulkan-ee-archetype%22)
+
 ## Introduction
 
 Kukulkan EE is an opinionated bootstrap archetype for JavaEE/JakartaEE 8.0 and Microprofile 3 family.
