@@ -16,11 +16,11 @@ Hence Kukulkan EE was created with the following principles:
 Kukulkan integrates the following dependencies:
 
 * Java 11 - As language
-* Maven - SCM/Task Runner
-* SL4J - log abstraction (using JDK log by default)
-* Payara 5 - runtime
-* Jakarta EE 8 and MicroProfile 3.3 - APIs
-* JKube for basic Docker/K8S control using Maven
+* [Maven](https://maven.apache.org) - SCM/Task Runner
+* [SLF4J](http://www.slf4j.org/) - log abstraction using JDK log by default, (as CDI producer)
+* [Payara 5](https://www.payara.fish/) - runtime (with uber-jar support)
+* [Jakarta EE 8](https://jakarta.ee/) and [MicroProfile 3.3](https://microprofile.io/) - APIs
+* [JKube](https://www.eclipse.org/jkube/) for basic Docker/K8S control using Maven
 
 This is a work in progress.
 
@@ -37,6 +37,10 @@ By default, Kukulkan includes the creation of a JAX-RS application class to defi
 Also, a simple Hello world endpoint is created, have a look **HelloController** class.
 
 More information on MicroProfile can be found [here](https://microprofile.io/)
+
+## Pristine project
+
+This archetype is based on [kukulkan-ee](https://github.com/tuxtor/kukulkan-ee) project which maintains a base project to execute CI and ensure archetype health.
 
 ## How to use this archetype 
 
