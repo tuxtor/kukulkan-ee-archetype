@@ -48,6 +48,6 @@ To generate a Docker/JakartaEE/MicroProfile base project, you could invoke this 
 mvn archetype:generate -DarchetypeGroupId=com.nabenik -DarchetypeArtifactId=kukulkan-ee-archetype -DarchetypeVersion=0.0.1 -DgroupId=<yourgroupid> -DartifactId=<yourartifactid> -Dversion=<yourversion>
 ```
 
-This will generate a base Java project with all libraries activated and persistance on H2 database (default provider in Payara).
+This will generate a base Java project with all libraries activated and persistence on H2 database (default provider in Payara).
 
 After that any Java IDE will suffice to develop your next microservice with Java.
