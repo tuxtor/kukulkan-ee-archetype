@@ -36,6 +36,10 @@ By default, Kukulkan includes a JAX-RS application starter class to define the p
 
 Also, a simple Hello world endpoint is created, have a look **HelloController** class.
 
+## Pristine project
+
+This archetype is based on [kukulkan-ee](https://github.com/tuxtor/kukulkan-ee) project which maintains a base project to execute CI and ensure archetype health.
+
 ## How to use this archetype 
 
 To generate a Docker/JakartaEE/MicroProfile base project, you could invoke this archetype:
